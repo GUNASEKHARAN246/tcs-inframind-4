@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MAIL FORM </title>
+    <!-- <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=1EjNBqhezMXzi1Jpl6tMiAmVlz3pfBUtZwkvJhSg3aRP7nBac-rfSTGmHlPycW61kYQYW0hblqaxzz4dFRL97R6Kd_XrK2lzZSTfhdYi6VGcaURDK8RW-EW59gUUuBsGDyrOByJkzH9Yy7iCDbJMgk0hQHbZR8Hh4CPXG4-LgVEFKiqVOts2S_8qlsYmiUtjNFr0vpjvezy4Q1wtw_OhdUvGf6uBP6nDXcjBprm8ZrApvc_ygmuJ4qeC_LNLd7LGOyoNWYSSfXoQbeXd37jrqasYxYXfQqQeQoTeeWu1GUxAm1I3UNv5nZ0zeJnMZKA7Un0MeXrpRLtrWbQHGRwuJpPFzW5V5wLLhwWpKzW0Jb7SAIBU3wYUH5jCL-PSGmtwvLdeCTxl9x-VR3t6B7tHH6KIRgSH1Lf7MJAes4AmPDRYpb-PdH25aVaPygDzAdKabM0kjI3AXMRBkDGVXRG2VDwO8FMgINYVlyhHj-TK_n4Q1wARdZCh1DpHNV24FJxuFSuu2HH84dgGV0G2VMoOR-szTG5V2TJfr5_pqVM1Ms6j9EYId51qBwrqy3F7l3IOKfCPTyd58jdZL6R0xll1YN0isT_AXV_eqn42Qpe4zX-02EzLsHH9n9L2PWiQgZvH6nJxFkP1IwTitJHYdEhp7-VOD73SwdBB2xblWY0pEYFwZxV3ORpDEK0s-lin2teGtkKC9n01vow274EDRFQh5J0Of2wC52GDXUs4tkwkqCMhVPEPSaqdxWkuBenoIVRuosarXXJWYOnIw9fyLyCcR6TlOSn_beAuqywnIx3H-Qfddi4ZaDibx4ubZbBF8-rMA_Czf76IjoaGsOhGDXyGgGWVif5VYvl6voFI6vZzvt3SM3TOjz9VIiFpsxFenCO0yDg3FB6s2RDa_8VDUntGQ5p9olkWG7ROb0O3c7fJeOaSClDtnG-esny4mtX9t9kwIan6pJtIfg_IfeDIVQkUjfVMzGnLeO-yDtLQXGGfSFQsRHOxOZmBWLBPPtLJSdYYirB-6Yc8azhLXk78UtMqVAoQ0jqxAD73VCUIrQ0JJBYb0aGKA2TMGRbZUDCzTYpboFBDPmwJXsXJFRkRuEGqreLia-1OLgCOEB5FKGIrNOzuFeL_b-vWgOY41Yg4ms5gbAPiXpjB-4ZW94QvfUTy9-CkSc9tp3rzkw_ROcuWlxRPJfNYQDcJBz7CLZyonPtMI8xWCW0oyFvsgaou-tdd5w" -->
+    <!-- nonce="298655749460f4a570e5b1e4be476472" charset="UTF-8"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="sc.js"></script>
+</head>
+
+
+<!-- <script>
+    function myFunction() {
+        $.getJSON("pub.json", function(data) {
+
+            data.Parameters.KeyName.Default = document.getElementsByName("Keypair")[0].value;
+            data.Parameters.InstanceType.Default = document.getElementsByName("InstanceType")[0].value;
+            data.Parameters.DBName.Default = document.getElementsByName("DBName")[0].value;
+            data.Parameters.DBUser.Default = document.getElementsByName("DBuser")[0].value;
+            data.Parameters.DBPassword.Default = document.getElementsByName("DBpassword")[0].value;
+
+            console.log(data);
+        });
+    }
+</script> -->
+<style>
+    body {
+        background-image: url('aws.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+
+
+<body>
+
+    <!-- <div>-->
+    <form id="frm1" action="{{url_for("hello")}}" method="post">
+        <div style="margin-left:40%">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 style="color:white"><b>AWS Automation</b></h1>
+            <br>
+            <label style="color:white">Description</label>
+            <br>
+
+            <input type="input" style="height: 30px;width: 250px;" placeholder="Enter the Description Text" required/>
+            <br>
+            <br>
+            <label style="color:white">KeyPair</label><br>
+            <input type="input" id="Keypair" style="height: 30px;width: 250px;" placeholder="Enter the KeyPair Key" required/>
+            <br>
+            <br>
+            <label style="color:white">Instance Type</label><br>
+            <input type="input" id="Itype" style="height: 30px;width: 250px;" placeholder="Enter the InstanceType" required/>
+            <br>
+            <br>
+            <label style="color:white">Database Name</label><br>
+            <input type="input" style="height: 30px;width: 250px;" placeholder="Enter the Database Name" required/>
+            <br>
+            <br>
+            <label style="color:white">Database User</label><br>
+            <input type="input" id="Dbuser" style="height: 30px;width: 250px;" placeholder="Enter the Database User" required/>
+            <br>
+            <br>
+            <label style="color:white">Database Password</label><br>
+            <input type="password" id="Dbpass" style="height: 30px;width: 250px;" placeholder="Enter the Database Password" required/>
+            <br>
+            <br>
+            <!-- <div style="display: flex; flex-direction: row; justify-content: flex-start;"> -->
+
+            <button type="submit" onclick="myFunction();">Submit</button>
+            <script>
+            </script>
+            <!-- <input type="button" onclick="myFunction()" value="Go Back" style="margin-left:20px"> -->
+            <br>
+            <!-- </div> -->
+    </form>
+    <!--</div> -->
+    </div>
+
+</body>
+
+</html>
